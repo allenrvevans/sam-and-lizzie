@@ -5,3 +5,51 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 22ms (Views: 15.4ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/find_code/123" for ::1 at 2020-01-23 07:23:01 +1000
+Processing by RsvpsController#new as HTML
+  Parameters: {"code"=>"123"}
+  Rendering rsvps/new.haml within layouts/application
+  Rendered rsvps/new.haml within layouts/application (3.7ms)
+Completed 200 OK in 20ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find_code/123" for ::1 at 2020-01-23 07:23:06 +1000
+Processing by RsvpsController#new as HTML
+  Parameters: {"code"=>"123"}
+  Rendering rsvps/new.haml within layouts/application
+  Rendered rsvps/new.haml within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find_code/123" for ::1 at 2020-01-23 07:23:26 +1000
+Processing by RsvpsController#new as HTML
+  Parameters: {"code"=>"123"}
+  Rendering rsvps/new.haml within layouts/application
+  Rendered rsvps/new.haml within layouts/application (1.5ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find_code/123" for ::1 at 2020-01-23 07:24:58 +1000
+Processing by RsvpsController#show as HTML
+  Parameters: {"code"=>"123"}
+  Rendering rsvps/show.haml within layouts/application
+  Rendered rsvps/show.haml within layouts/application (1.5ms)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/find_code/123" for ::1 at 2020-01-23 07:25:35 +1000
+Processing by RsvpsController#show as HTML
+  Parameters: {"code"=>"123"}
+  Rendering rsvps/show.haml within layouts/application
+  Rendered rsvps/show.haml within layouts/application (1.8ms)
+Completed 200 OK in 17ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/rsvp/123" for ::1 at 2020-01-23 07:26:03 +1000
+Processing by RsvpsController#show as HTML
+  Parameters: {"code"=>"123"}
+  Rendering rsvps/show.haml within layouts/application
+  Rendered rsvps/show.haml within layouts/application (1.7ms)
+Completed 200 OK in 12ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+

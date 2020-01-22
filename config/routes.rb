@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'find_code', to: 'rsvps#new'
-  post 'search', to: 'rsvps#search'
+  get 'rsvp/:code', to: 'rsvps#show'
   
+  # post 'search', to: 'rsvps#search'
+
 end
