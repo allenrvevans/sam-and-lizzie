@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  get 'find_code', to: 'rsvps#new'
+  post 'search', to: 'rsvps#search'
+  
 end

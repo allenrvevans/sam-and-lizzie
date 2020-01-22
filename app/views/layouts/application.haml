@@ -1,0 +1,10 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
+    %title= "Sam and Lizzie"
+    -# = javascript_pack_tag 'application'
+    -# = stylesheet_pack_tag 'stylesheet'
+    = csrf_meta_tags
+  %body
+    = yield
