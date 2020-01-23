@@ -1,0 +1,47 @@
+-# two sections guest 1 and 2
+-# text fields: first name and last names, dietary requirements
+-# check boxes: attending wedding, bbq
+
+-# text fields music suggestions
+
+-# put
+
+= form_with do 
+  %div
+    = label_tag(:first_name_1, 'First Name')
+    = text_field_tag(:first_name_1)
+  %div
+    = label_tag(:surname_1, 'Surname')
+    = text_field_tag(:surname_1)
+  %div
+    = label_tag(:dietary_requirements_1, 'Dietary Requirements')
+    = text_field_tag(:dietary_requirements_1)
+  %div
+    = label_tag(:attending_bbq_1, 'Will you be attending the BBQ?')
+    = check_box_tag(:attending_bbq_1)
+  %div
+    = label_tag(:attending_wedding_1, 'Will you be attending the wedding?')
+    = check_box_tag(:attending_wedding_1)
+
+  %hr 
+
+  %div
+    = label_tag(:first_name_2, 'First Name')
+    = text_field_tag(:first_name_2)
+  %div
+    = label_tag(:surname_2, 'Surname')
+    = text_field_tag(:surname_2)
+  %div
+    = label_tag(:dietary_requirements_2, 'Dietary Requirements')
+    = text_field_tag(:dietary_requirements_2)
+  %div
+    = label_tag(:attending_bbq_2, 'Will you be attending the BBQ?')
+    = check_box_tag(:attending_bbq_2)
+  %div
+    = label_tag(:attending_wedding_2, 'Will you be attending the wedding?')
+    = check_box_tag(:attending_wedding_2)
+
+  %hr 
+  = label_tag(:music_suggestions, 'Music suggestions')
+  = text_field_tag(:music_suggestions)
+  
