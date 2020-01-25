@@ -413,3 +413,93 @@ Processing by ApplicationController#landing_page as HTML
 Completed 200 OK in 16ms (Views: 8.7ms)
 
 
+Started PUT "/rsvps/123" for ::1 at 2020-01-25 20:59:14 +1000
+Processing by RsvpsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WuuYIcgaQaCQ6MDZ1iXx2DX8CU5jYnvscT7lIbCVW0p3q7NYzqtWNA4Fy0x0+Y2moEovajipbmu5+k55tZfgyQ==", "first_name_1"=>"Susan", "commit"=>"Send your RSVP", "id"=>"123"}
+Completed 500 Internal Server Error in 4ms
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/rsvps_controller.rb:10:in `update'
+Started PUT "/rsvps/123" for ::1 at 2020-01-25 21:00:37 +1000
+Processing by RsvpsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WuuYIcgaQaCQ6MDZ1iXx2DX8CU5jYnvscT7lIbCVW0p3q7NYzqtWNA4Fy0x0+Y2moEovajipbmu5+k55tZfgyQ==", "first_name_1"=>"Susan", "commit"=>"Send your RSVP", "id"=>"123"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/rsvps_controller.rb:10:in `update'
+Started PUT "/rsvps/123" for ::1 at 2020-01-25 21:01:24 +1000
+Processing by RsvpsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WuuYIcgaQaCQ6MDZ1iXx2DX8CU5jYnvscT7lIbCVW0p3q7NYzqtWNA4Fy0x0+Y2moEovajipbmu5+k55tZfgyQ==", "first_name_1"=>"Susan", "commit"=>"Send your RSVP", "id"=>"123"}
+Completed 500 Internal Server Error in 3ms
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/rsvps_controller.rb:10:in `update'
+Started PUT "/rsvps/123" for ::1 at 2020-01-25 21:03:06 +1000
+Processing by RsvpsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WuuYIcgaQaCQ6MDZ1iXx2DX8CU5jYnvscT7lIbCVW0p3q7NYzqtWNA4Fy0x0+Y2moEovajipbmu5+k55tZfgyQ==", "first_name_1"=>"Susan", "commit"=>"Send your RSVP", "id"=>"123"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/rsvps_controller.rb:10:in `update'
+Started PUT "/rsvps/123" for ::1 at 2020-01-25 21:03:39 +1000
+Processing by RsvpsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WuuYIcgaQaCQ6MDZ1iXx2DX8CU5jYnvscT7lIbCVW0p3q7NYzqtWNA4Fy0x0+Y2moEovajipbmu5+k55tZfgyQ==", "first_name_1"=>"Susan", "commit"=>"Send your RSVP", "id"=>"123"}
+Completed 500 Internal Server Error in 2ms
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/rsvps_controller.rb:10:in `update'
+Started PUT "/rsvps/123" for ::1 at 2020-01-25 21:03:52 +1000
+Processing by RsvpsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WuuYIcgaQaCQ6MDZ1iXx2DX8CU5jYnvscT7lIbCVW0p3q7NYzqtWNA4Fy0x0+Y2moEovajipbmu5+k55tZfgyQ==", "first_name_1"=>"Susan", "commit"=>"Send your RSVP", "id"=>"123"}
+  Rendering rsvps/show.haml within layouts/application
+  Rendered rsvps/show.haml within layouts/application (2.9ms)
+Completed 200 OK in 12ms (Views: 11.5ms)
+
+
+Started PUT "/rsvps/123" for ::1 at 2020-01-25 21:04:56 +1000
+Processing by RsvpsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WuuYIcgaQaCQ6MDZ1iXx2DX8CU5jYnvscT7lIbCVW0p3q7NYzqtWNA4Fy0x0+Y2moEovajipbmu5+k55tZfgyQ==", "first_name_1"=>"Susan", "commit"=>"Send your RSVP", "id"=>"123"}
+  Rendering rsvps/show.haml within layouts/application
+  Rendered rsvps/show.haml within layouts/application (1.2ms)
+Completed 200 OK in 9ms (Views: 8.0ms)
+
+
+Started PUT "/rsvps/123" for ::1 at 2020-01-25 21:05:44 +1000
+Processing by RsvpsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WuuYIcgaQaCQ6MDZ1iXx2DX8CU5jYnvscT7lIbCVW0p3q7NYzqtWNA4Fy0x0+Y2moEovajipbmu5+k55tZfgyQ==", "first_name_1"=>"Susan", "commit"=>"Send your RSVP", "id"=>"123"}
+  Rendering rsvps/show.haml within layouts/application
+  Rendered rsvps/show.haml within layouts/application (1.7ms)
+Completed 200 OK in 14ms (Views: 13.3ms)
+
+
+Started GET "/rsvps/123/edit" for ::1 at 2020-01-25 21:05:55 +1000
+Processing by RsvpsController#edit as HTML
+  Parameters: {"id"=>"123"}
+  Rendering rsvps/edit.haml within layouts/application
+  Rendered rsvps/edit.haml within layouts/application (3.7ms)
+Completed 200 OK in 16ms (Views: 10.7ms)
+
+
+Started PUT "/rsvps/123" for ::1 at 2020-01-25 21:06:01 +1000
+Processing by RsvpsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"R2ipm+HazRZpzEnyMB2w1mLtntbtIJQncZBnpie7RVZqKILi52vagvchQmeSwcyo91u48rbrgaC5VMz+Irn+1Q==", "first_name_1"=>"Susan", "surname_1"=>"", "dietary_requirements_1"=>"", "first_name_2"=>"", "surname_2"=>"", "dietary_requirements_2"=>"", "music_suggestions"=>"", "commit"=>"Send your RSVP", "id"=>"123"}
+  Rendering rsvps/show.haml within layouts/application
+  Rendered rsvps/show.haml within layouts/application (2.5ms)
+Completed 200 OK in 19ms (Views: 18.1ms)
+
+

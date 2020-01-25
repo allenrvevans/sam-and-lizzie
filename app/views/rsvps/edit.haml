@@ -6,7 +6,7 @@
 
 -# put
 
-= form_with do 
+= form_with(url: rsvp_path, method: 'put') do 
   %div
     = label_tag(:first_name_1, 'First Name')
     = text_field_tag(:first_name_1)
@@ -42,6 +42,9 @@
     = check_box_tag(:attending_wedding_2)
 
   %hr 
-  = label_tag(:music_suggestions, 'Music suggestions')
-  = text_field_tag(:music_suggestions)
+  %div
+    = label_tag(:music_suggestions, 'Music suggestions')
+    = text_field_tag(:music_suggestions)
   
+  %button
+    = submit_tag('Send your RSVP')

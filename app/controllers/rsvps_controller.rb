@@ -1,11 +1,14 @@
 class RsvpsController < ApplicationController
 
   def show
-    @code = params[:code]
   end
 
   def edit
-    #  show view for code thats not real
+  end
+
+  def update
+    @person_details = params
+    render action: :show
   end
 
 end

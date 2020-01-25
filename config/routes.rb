@@ -4,6 +4,5 @@ Rails.application.routes.draw do
 
   get 'rsvp/:code', to: 'rsvps#show'
 
-  resources :rsvps, only: [:edit]
-
+  resources :rsvps, only: [:edit, :update]
 end
