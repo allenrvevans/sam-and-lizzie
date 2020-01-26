@@ -2,6 +2,10 @@
   font-size: 16px;
   font-family: 'Montserrat', sans-serif;
   color: #41433F;
+  font-weight: 400;
+}
+body {
+  margin: 0;
 }
 .parisienne {
   font-family: 'Parisienne', cursive;
@@ -40,10 +44,24 @@
  .navigation {
   max-width: 30%; 
   display: flex;
-  justify-content: space-between; 
+  flex-wrap: wrap;
+  flex-grow: 1;
  }
  .nav-elements {
    padding: 1rem;
    border: 0.1rem solid #D5E4CE;
    margin: 0.25rem;
+ }
+ .nav-elements > a {
+  text-decoration: none;
+  color: #41433F;
+ }
+ .nav-elements > a:hover {
+  font-weight: 500;
+ }
+
+ .body_container {
+   background-color: #D5E4CE;
+   width: 100vw;
+   height: 100vh;
  }
