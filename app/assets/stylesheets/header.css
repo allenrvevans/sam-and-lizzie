@@ -1,0 +1,43 @@
+.fancy_heading {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 3.25rem;
+  margin: 0.7rem 0 0 0;
+  text-align: center;
+ }
+ .sub_heading {
+  font-size: 1.25rem;
+  margin: 0;
+  text-align: center;
+ }
+ .header {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .navigation_container {
+   width: 100%;
+   display: flex;
+   justify-content: center; 
+   padding: 1.25rem 0 .7rem 0;
+ }
+ .navigation {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem;
+ }
+ .nav-elements {
+   padding: 1rem;
+   border: 0.1rem solid #D5E4CE;
+   margin: 0.25rem;
+ }
+ .nav-elements:hover {
+   background-color:  #D5E4CE;
+ }
+
+ .nav-elements > a {
+  text-decoration: none;
+  color: #41433F;
+ }
+ .nav-elements > a:hover {
+  font-weight: 500;
+ }

@@ -3,12 +3,13 @@
   %head
     %meta{content: "width=device-width, initial-scale=1", name: "viewport"}/
     %title= "Sam and Lizzie"
-    -# = javascript_pack_tag 'application'
-    -# = stylesheet_pack_tag 'stylesheet'
     = stylesheet_link_tag "styles"
     %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap", :rel => "stylesheet"}/
     %link{:href => "https://fonts.googleapis.com/css?family=Mrs+Saint+Delafield&display=swap", :rel => "stylesheet"}/
     = csrf_meta_tags
   %body
     = render('layouts/header')
-    = yield
+    .body_container 
+      .copy_container
+        .copy.shadow
+          = yield
