@@ -2972,3 +2972,67 @@ Processing by ApplicationController#landing_page as HTML
 Completed 200 OK in 22ms (Views: 18.9ms)
 
 
+Started GET "/" for ::1 at 2020-01-26 14:49:20 +1000
+Processing by ApplicationController#landing_page as HTML
+  Rendering application/landing_page.haml within layouts/application
+  Rendered application/landing_page.haml within layouts/application (15.5ms)
+  Rendered layouts/_header.haml (11.8ms)
+Completed 200 OK in 87ms (Views: 77.4ms)
+
+
+Started GET "/details" for ::1 at 2020-01-26 14:49:24 +1000
+Processing by ApplicationController#details as HTML
+  Rendering application/details.haml within layouts/application
+  Rendered application/details.haml within layouts/application (4.0ms)
+  Rendered layouts/_header.haml (6.7ms)
+Completed 200 OK in 28ms (Views: 25.0ms)
+
+
+Started GET "/details" for ::1 at 2020-01-26 14:50:17 +1000
+Processing by ApplicationController#details as HTML
+  Rendering application/details.haml within layouts/application
+  Rendered application/details.haml within layouts/application (4.0ms)
+  Rendered layouts/_header.haml (6.9ms)
+Completed 200 OK in 39ms (Views: 37.1ms)
+
+
+Started GET "/sunday" for ::1 at 2020-01-26 14:50:27 +1000
+Processing by ApplicationController#sunday as HTML
+  Rendering application/sunday.haml within layouts/application
+  Rendered application/sunday.haml within layouts/application (3.1ms)
+  Rendered layouts/_header.haml (7.2ms)
+Completed 200 OK in 27ms (Views: 23.4ms)
+
+
+Started GET "/accomodation" for ::1 at 2020-01-26 14:50:31 +1000
+Processing by ApplicationController#accomodation as HTML
+  Rendering application/accomodation.haml within layouts/application
+  Rendered application/accomodation.haml within layouts/application (18.6ms)
+  Rendered layouts/_header.haml (4.6ms)
+Completed 200 OK in 38ms (Views: 35.4ms)
+
+
+Started GET "/transport" for ::1 at 2020-01-26 14:50:34 +1000
+Processing by ApplicationController#transport as HTML
+  Rendering application/transport.haml within layouts/application
+  Rendered application/transport.haml within layouts/application (4.4ms)
+  Rendered layouts/_header.haml (4.7ms)
+Completed 200 OK in 23ms (Views: 20.7ms)
+
+
+Started GET "/gifts" for ::1 at 2020-01-26 14:50:37 +1000
+Processing by ApplicationController#gifts as HTML
+  Rendering application/gifts.haml within layouts/application
+  Rendered application/gifts.haml within layouts/application (2.4ms)
+  Rendered layouts/_header.haml (4.6ms)
+Completed 200 OK in 20ms (Views: 17.8ms)
+
+
+Started GET "/" for ::1 at 2020-01-26 14:50:40 +1000
+Processing by ApplicationController#landing_page as HTML
+  Rendering application/landing_page.haml within layouts/application
+  Rendered application/landing_page.haml within layouts/application (3.0ms)
+  Rendered layouts/_header.haml (6.0ms)
+Completed 200 OK in 26ms (Views: 21.8ms)
+
+
