@@ -1,0 +1,49 @@
+:root {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #41433F;
+}
+.parisienne {
+  font-family: 'Parisienne', cursive;
+ }
+ .fancy_heading {
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-size: 3rem;
+  display: block;
+  margin: 0.7rem 0 0 0;
+  width: 100%;
+  text-align: center;
+ }
+ .sub_heading {
+  font-size: 1rem;
+  display: block;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+ }
+ .header {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   width: 100%;
+ }
+ .header_contain {
+    display: flex;
+    justify-content: center;
+ }
+ .navigation_contain {
+   width: 100%;
+   display: flex;
+   justify-content: center; 
+   padding: 1.5rem 0;
+ }
+ .navigation {
+  max-width: 30%; 
+  display: flex;
+  justify-content: space-between; 
+ }
+ .nav-elements {
+   padding: 1rem;
+   border: 0.1rem solid #D5E4CE;
+   margin: 0.25rem;
+ }

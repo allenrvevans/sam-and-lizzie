@@ -5,6 +5,8 @@
     %title= "Sam and Lizzie"
     -# = javascript_pack_tag 'application'
     -# = stylesheet_pack_tag 'stylesheet'
+    = stylesheet_link_tag "styles"
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat|Mrs+Saint+Delafield&display=swap", :rel => "stylesheet"}/
     = csrf_meta_tags
   %body
     = yield
