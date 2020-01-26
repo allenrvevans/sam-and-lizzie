@@ -85,6 +85,7 @@ h4{
 .copy > ul > li > a {
   text-decoration: underline;
   color: #41433F;
+  font-weight: 500;
 }
 .copy > ul > li {
   line-height: 2;
@@ -98,5 +99,4 @@ h4{
 .img {
   object-fit: contain;
   width: 100%;
-  /* margin-top: 1rem; */
 }
