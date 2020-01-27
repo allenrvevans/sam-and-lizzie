@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   root to: "application#landing_page"
 
-  get 'rsvp/:code', to: 'rsvps#show'
+  get 'rsvps/:code', to: 'rsvps#show'
 
   resources :rsvps, only: [:edit, :update]
 
@@ -11,5 +11,6 @@ Rails.application.routes.draw do
   get '/accomodation', to: 'application#accomodation'
   get '/transport', to: 'application#transport'
   get '/gifts', to: 'application#gifts'
+  get '/rsvp', to: 'application#rsvp'
 
 end

@@ -6,34 +6,71 @@
 }
 body {
   margin: 0;
+
 }
 h3, 
 h4{
   font-weight: 500;
 }
+@font-face {
+  font-family: 'Santorini';
+  src:  url('SantoriniRegular.woff') format('woff');
+}
 
  .body_container {
-   background-color: #D5E4CE;
    width: 100vw;
    height: 100%;
  }
+ @media only screen and (max-width: 60rem) {
+  .body_container {
+    background-color: transparent;
+  }
+}
  .shadow {
-  -webkit-box-shadow: 0px 3px 36px 0px rgba(161,161,161,0.5);
-  -moz-box-shadow: 0px 3px 36px 0px rgba(161,161,161,0.5);
-  box-shadow: 0px 3px 36px 0px rgba(161,161,161,0.5);
+  -webkit-box-shadow: 0px 3px 36px 0px rgba(120, 133, 114,0.5);
+  -moz-box-shadow: 0px 3px 36px 0px rgba(120, 133, 114,0.5);
+  box-shadow: 0px 3px 36px 0px rgba(120, 133, 114,0.5);
+  
 }
 .fancy_heading {
-  font-family: 'Mrs Saint Delafield', cursive;
-  font-size: 3.25rem;
+  font-family: 'Santorini';
+  font-size: 2.5rem;
   font-weight: 400;
   margin: 0.7rem 0 0 0;
   text-align: center;
- }
+}
+  @media only screen and (max-width: 60rem) {
+    .fancy_heading {
+    font-size: 2rem;
+    line-height: 5;
+    }
+  }
  .sub_heading {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin: 0;
   text-align: center;
  }
+ @media only screen and (max-width: 60rem) {
+  .sub_heading {
+  font-size: 1rem;
+  }
+}
+.img_container {
+  background-image: url("flowers1.png");
+  background-size: cover;  
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+@media only screen and (max-width: 30rem) {
+  .img_container {
+    background-image: url("flower2.png");
+    background-size: cover;  
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 7.5rem;
+  }
+}
  .header {
    display: flex;
    justify-content: center;
@@ -49,14 +86,26 @@ h4{
   display: flex;
   flex-wrap: wrap;
   padding: 0.5rem;
+  max-width: 40rem;
  }
+ @media only screen and (min-width: 55rem) {
+  .navigation {
+    max-width: 55rem;
+  }
+}
+ @media only screen and (max-width: 40rem) {
+  .navigation {
+    justify-content: center;
+  }
+}
  .nav-elements {
    padding: .6rem 1rem;
-   border: 0.1rem solid #D5E4CE;
+   border: 0.1rem solid #dfedd8;
    margin: 0.25rem;
+   background-color: white;
  }
  .nav-elements:hover {
-   background-color:  #D5E4CE;
+   background-color:  #dfedd8;
  }
 
  .nav-elements > a {
@@ -69,6 +118,8 @@ h4{
  .copy_container {
   display: flex;
   justify-content: center;
+  background-color: #dfedd8;
+
 }
 .copy {
   max-width: 40rem;
@@ -77,8 +128,14 @@ h4{
   margin: 2rem 0;
   min-height: 30rem;
 }
+@media only screen and (max-width: 45rem) {
+  .copy {
+  background-color: #dfedd8;
+  margin: 0;
+  }
+}
 .copy > p {
-  line-height: 1.75;
+  line-height: 2;
 }
 .copy > p > a,
 .copy > p > span > a,
@@ -91,12 +148,23 @@ h4{
   line-height: 2;
 }
 .copy_heading {
-  font-family: 'Mrs Saint Delafield', cursive;
-  font-size: 2.5rem;
+  font-family: 'Santorini';
+  font-size: 1.75rem;
   font-weight: 400;
   margin: 1rem 0 0 0;
 }
+#names {
+  text-align: center;
+  line-height: 3.5;
+}
+
 .img {
   object-fit: contain;
   width: 100%;
+}
+.couple_img {
+  margin-top: 2rem;
+}
+.hands_img {
+  padding: 1rem 0;
 }

@@ -1,59 +1,56 @@
--# rsvp form
--# RVSP			please reply by 29th March	
-
--# Will you attend?	Name
--# Email
--# Yes I will be there
--# Sorry I can’t come
-
--# Do you have any dietary requirements?		
-
--# Will you be able to attend the Sunday BBQ?		Yes/ no/ maybe 
-
--# Any song requests to get you on the dancefloor?
-
-%p 
+%h2.copy_heading
+  Rsvp
+%p
   Please RSVP by the 29th of March
 
 = form_with(url: rsvp_path, method: 'put') do 
-  %div
-    = label_tag(:first_name_1, 'First Name')
-    = text_field_tag(:first_name_1)
-  %div
-    = label_tag(:surname_1, 'Surname')
-    = text_field_tag(:surname_1)
-  %div
-    = label_tag(:dietary_requirements_1, 'Do you have any dietary requirements?	')
-    = text_field_tag(:dietary_requirements_1)
-  %div
-    = label_tag(:attending_bbq_1, 'Will you be able to attend the Sunday BBQ?')
-    = check_box_tag(:attending_bbq_1)
-  %div
-    = label_tag(:attending_wedding_1, 'Will you be attending the wedding?')
-    = check_box_tag(:attending_wedding_1)
-
-  %hr 
-
-  %div
-    = label_tag(:first_name_2, 'First Name')
-    = text_field_tag(:first_name_2)
-  %div
-    = label_tag(:surname_2, 'Surname')
-    = text_field_tag(:surname_2)
-  %div
-    = label_tag(:dietary_requirements_2, 'Do you have any dietary requirements?	')
-    = text_field_tag(:dietary_requirements_2)
-  %div
-    = label_tag(:attending_bbq_2, 'Will you be able to attend the Sunday BBQ?')
-    = check_box_tag(:attending_bbq_2)
-  %div
-    = label_tag(:attending_wedding_2, 'Will you be attending the wedding?')
-    = check_box_tag(:attending_wedding_2)
-
-  %hr 
-  %div
-    = label_tag(:music_suggestions, 'Music suggestions')
-    = text_field_tag(:music_suggestions)
   
-  %button
-    = submit_tag('Send your RSVP')
+  = label_tag(:first_name_1, 'First Name')
+  = text_field_tag(:first_name_1)
+   
+    
+  = label_tag(:surname_1, 'Surname')
+  = text_field_tag(:surname_1)
+  
+  
+  = label_tag(:dietary_requirements_1, 'Do you have any dietary requirements?	')
+  = text_field_tag(:dietary_requirements_1)
+  
+  
+  = label_tag(:attending_bbq_1, 'Will you be able to attend the Sunday BBQ?')
+  = check_box_tag(:attending_bbq_1)
+  
+  
+  = label_tag(:attending_wedding_1, 'Will you be attending the wedding?')
+  = check_box_tag(:attending_wedding_1)
+
+  %hr 
+
+   
+  
+  = label_tag(:first_name_2, 'First Name')
+  = text_field_tag(:first_name_2)
+  
+  
+  = label_tag(:surname_2, 'Surname')
+  = text_field_tag(:surname_2)
+  
+  
+  = label_tag(:dietary_requirements_2, 'Do you have any dietary requirements?	')
+  = text_field_tag(:dietary_requirements_2)
+  
+  
+  = label_tag(:attending_bbq_2, 'Will you be able to attend the Sunday BBQ?')
+  = check_box_tag(:attending_bbq_2)
+  
+  
+  = label_tag(:attending_wedding_2, 'Will you be attending the wedding?')
+  = check_box_tag(:attending_wedding_2)
+
+  %hr 
+   
+    
+  = label_tag(:music_suggestions, 'Any song requests to get you on the dancefloor?')
+  = text_field_tag(:music_suggestions)
+  
+  = submit_tag('Send your RSVP')
