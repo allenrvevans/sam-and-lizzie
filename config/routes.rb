@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root to: "application#landing_page"
+  root to: "pages#landing_page"
 
   get 'rsvp/thanks', to: 'rsvps#thanks'
   get 'rsvp/:code', to: 'rsvps#edit'
@@ -8,11 +8,11 @@ Rails.application.routes.draw do
 
   #resources :rsvps, only: [:edit, :update]
 
-  get '/details', to: 'application#details'
-  get '/sunday', to: 'application#sunday'
-  get '/accomodation', to: 'application#accomodation'
-  get '/transport', to: 'application#transport'
-  get '/gifts', to: 'application#gifts'
-  get '/rsvp', to: 'application#rsvp'
+  get '/details', to: 'pages#details'
+  get '/sunday', to: 'pages#sunday'
+  get '/accomodation', to: 'pages#accomodation'
+  get '/transport', to: 'pages#transport'
+  get '/gifts', to: 'pages#gifts'
+  get '/rsvp', to: 'pages#rsvp'
 
 end

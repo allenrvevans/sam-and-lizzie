@@ -1,11 +1,11 @@
-require 'airtable'
-require 'active_support/all'
 
 class RsvpsController < ApplicationController
+  require 'airtable'
+  require 'active_support/all'
 
   def initialize
-    client = Airtable::Client.new("keykYRK7UNj6N1M03")
-    @table = client.table("appnnvvlweqxf6pHS", "RSVP")
+    super
+    init_client
   end
 
   def edit
@@ -66,6 +66,13 @@ class RsvpsController < ApplicationController
   end
 
   def thanks
+  end
+
+  private 
+
+  def init_client
+    client = Airtable::Client.new("keykYRK7UNj6N1M03")
+    @table = client.table("appnnvvlweqxf6pHS", "RSVP")
   end
 
 end
