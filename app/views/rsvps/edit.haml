@@ -25,10 +25,12 @@
       = label_tag(:attending_wedding_1, 'Will you be attending the wedding? (check box if yes)', :class => "form_label")
       = check_box_tag(:attending_wedding_1, value=true, checked=@attending_wedding_1, :class => "form_field")
 
-    %h3.form_section_heading
-      Second Guest
-
     - if @guests > 1
+
+      %h3.form_section_heading
+        Second Guest
+
+
       %div
         = label_tag(:first_name_2, 'First Name', :class => "form_label")
         = text_field_tag(:first_name_2, value=@first_name_2, :class => "form_field")
@@ -46,8 +48,8 @@
         = check_box_tag(:attending_wedding_2, value=true, checked=@attending_wedding_2, :class => "form_field")
 
 
-      %div
-        = label_tag(:music_suggestions, 'Music suggestions', :class => "form_label w-100")
-        = text_field_tag(:music_suggestions, value=@music_suggestions, :class => "form_field w-60")
+    %div
+      = label_tag(:music_suggestions, 'Music suggestions', :class => "form_label w-100")
+      = text_field_tag(:music_suggestions, value=@music_suggestions, :class => "form_field w-60")
     
     = submit_tag('Send your RSVP', :class => 'submit_button')
