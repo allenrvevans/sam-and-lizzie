@@ -32,6 +32,8 @@ class RsvpsController < ApplicationController
       @dietary_requirements_2 = record[:dietary_requirements_2]
 
       @music_suggestions = record[:music_suggestions]
+    else
+      redirect_to(action: 'incorrect')
     end
 
   end
@@ -66,6 +68,9 @@ class RsvpsController < ApplicationController
   end
 
   def thanks
+  end
+
+  def incorrect
   end
 
   private 
