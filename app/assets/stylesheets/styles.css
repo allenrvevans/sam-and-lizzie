@@ -14,7 +14,7 @@ h4{
 }
 @font-face {
   font-family: 'Santorini';
-  src:  url('fonts/SantoriniRegular.woff') format('woff');
+  src: url('SantoriniRegular.woff') format('woff');
 }
 
  .body_container {
@@ -56,7 +56,7 @@ h4{
   }
 }
 .img_container {
-  background-image: url("images/flowers1.png");
+  background-image: url("flowers1.png");
   background-size: cover;  
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -64,7 +64,7 @@ h4{
 }
 @media only screen and (max-width: 30rem) {
   .img_container {
-    background-image: url("images/flowers2.png");
+    background-image: url("flowers2.png");
     background-size: cover;  
     background-repeat: no-repeat;
     background-attachment: fixed;
