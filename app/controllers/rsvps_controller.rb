@@ -1,9 +1,6 @@
 require 'airtable'
 require 'active_support/all'
 
-
-
-
 class RsvpsController < ApplicationController
 
   def initialize

@@ -6,9 +6,8 @@
     = stylesheet_link_tag "styles"
     %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap", :rel => "stylesheet"}/
     = csrf_meta_tags
-  %body.img_container
+  %body.img_container{:role => "main"}
     = render('layouts/header')
     .body_container 
       .copy_container
-        .copy.shadow
-          = yield
+        =yield

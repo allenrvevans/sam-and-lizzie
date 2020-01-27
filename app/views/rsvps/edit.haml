@@ -1,48 +1,51 @@
-%h2.copy_heading
-  Rsvp
-%p
-  Please RSVP at your earliest convenience.
+-# TO DO: create a page for cant find code
 
-= form_with( method: 'put') do
-  %div
-    = label_tag(:first_name_1, 'First Name')
-    = text_field_tag(:first_name_1, value=@first_name_1)
-  %div
-    = label_tag(:surname_1, 'Surname')
-    = text_field_tag(:surname_1, value=@surname_1)
-  %div
-    = label_tag(:dietary_requirements_1, 'Do you have any dietary requirements?	')
-    = text_field_tag(:dietary_requirements_1, value=@dietary_requirements_1)
-  %div
-    = label_tag(:attending_bbq_1, 'Will you be able to attend the Sunday BBQ?')
-    = check_box_tag(:attending_bbq_1, value=true, checked=@attending_bbq_1)
-  %div
-    = label_tag(:attending_wedding_1, 'Will you be attending the wedding?')
-    = check_box_tag(:attending_wedding_1, value=true, checked=@attending_wedding_1)
+= render("shared/content_card") do
+  %h2.copy_heading
+    Rsvp
+  %p
+    Please RSVP at your earliest convenience.
 
-  %hr 
+  = form_with( method: 'put') do
+    %div
+      = label_tag(:first_name_1, 'First Name')
+      = text_field_tag(:first_name_1, value=@first_name_1)
+    %div
+      = label_tag(:surname_1, 'Surname')
+      = text_field_tag(:surname_1, value=@surname_1)
+    %div
+      = label_tag(:dietary_requirements_1, 'Do you have any dietary requirements?	')
+      = text_field_tag(:dietary_requirements_1, value=@dietary_requirements_1)
+    %div
+      = label_tag(:attending_bbq_1, 'Will you be able to attend the Sunday BBQ?')
+      = check_box_tag(:attending_bbq_1, value=true, checked=@attending_bbq_1)
+    %div
+      = label_tag(:attending_wedding_1, 'Will you be attending the wedding?')
+      = check_box_tag(:attending_wedding_1, value=true, checked=@attending_wedding_1)
 
-  - if @guests > 1
-    %div
-      = label_tag(:first_name_2, 'First Name')
-      = text_field_tag(:first_name_2, value=@first_name_2)
-    %div
-      = label_tag(:surname_2, 'Surname')
-      = text_field_tag(:surname_2, value=@surname_2)
-    %div
-      = label_tag(:dietary_requirements_2, 'Do you have any dietary requirements?	')
-      = text_field_tag(:dietary_requirements_2, value=@dietary_requirements_2)
-    %div
-      = label_tag(:attending_bbq_2, 'Will you be able to attend the Sunday BBQ?')
-      = check_box_tag(:attending_bbq_2, value=true, checked=@attending_bbq_2)
-    %div
-      = label_tag(:attending_wedding_2, 'Will you be attending the wedding?')
-      = check_box_tag(:attending_wedding_2, value=true, checked=@attending_wedding_2)
+    %hr 
 
-    %hr
+    - if @guests > 1
+      %div
+        = label_tag(:first_name_2, 'First Name')
+        = text_field_tag(:first_name_2, value=@first_name_2)
+      %div
+        = label_tag(:surname_2, 'Surname')
+        = text_field_tag(:surname_2, value=@surname_2)
+      %div
+        = label_tag(:dietary_requirements_2, 'Do you have any dietary requirements?	')
+        = text_field_tag(:dietary_requirements_2, value=@dietary_requirements_2)
+      %div
+        = label_tag(:attending_bbq_2, 'Will you be able to attend the Sunday BBQ?')
+        = check_box_tag(:attending_bbq_2, value=true, checked=@attending_bbq_2)
+      %div
+        = label_tag(:attending_wedding_2, 'Will you be attending the wedding?')
+        = check_box_tag(:attending_wedding_2, value=true, checked=@attending_wedding_2)
 
-  %div
-    = label_tag(:music_suggestions, 'Music suggestions')
-    = text_field_tag(:music_suggestions, value=@music_suggestions)
-  
-  = submit_tag('Send your RSVP')
+      %hr
+
+    %div
+      = label_tag(:music_suggestions, 'Music suggestions')
+      = text_field_tag(:music_suggestions, value=@music_suggestions)
+    
+    = submit_tag('Send your RSVP')
