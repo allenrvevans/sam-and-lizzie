@@ -8,13 +8,13 @@ body {
   margin: 0;
 
 }
-h3, 
+h3,
 h4{
   font-weight: 500;
 }
 @font-face {
   font-family: 'Santorini';
-  src: url('SantoriniRegular.woff') format('woff');
+  src: url('<%= asset_path("SantoriniRegular.woff") %>') format('woff');
 }
 
  .body_container {
@@ -30,7 +30,7 @@ h4{
   -webkit-box-shadow: 0px 3px 36px 0px rgba(120, 133, 114,0.5);
   -moz-box-shadow: 0px 3px 36px 0px rgba(120, 133, 114,0.5);
   box-shadow: 0px 3px 36px 0px rgba(120, 133, 114,0.5);
-  
+
 }
 .fancy_heading {
   font-family: 'Santorini';
@@ -57,15 +57,15 @@ h4{
 }
 .img_container {
   background-image: url(<%= asset_path 'flowers1.png' %>);
-  background-size: cover;  
+  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
 @media only screen and (max-width: 30rem) {
   .img_container {
-    background-image: url(<%= asset_path 'flowers2.png' %>);    
-    background-size: cover;  
+    background-image: url(<%= asset_path 'flowers2.png' %>);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center 7.5rem;
@@ -79,7 +79,7 @@ h4{
  .navigation_container {
    width: 100%;
    display: flex;
-   justify-content: center; 
+   justify-content: center;
    padding: 1.25rem 0 .7rem 0;
  }
  .navigation {
