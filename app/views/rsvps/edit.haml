@@ -37,13 +37,13 @@
         = text_field_tag(:surname_2, value=@surname_2, :class => "form_field")
       %div
         = label_tag(:dietary_requirements_2, 'Do you have any dietary requirements?	', :class => "form_label")
-        = text_field_tag(:dietary_requirements_2, value=@dietary_requirements_2, :class => "form_fiel")
+        = text_field_tag(:dietary_requirements_2, value=@dietary_requirements_2, :class => "form_field")
       %div
         = label_tag(:attending_wedding_2, 'Will you be attending the wedding?', :class => "form_label")
-        = check_box_tag(:attending_wedding_2, value=true, checked=@attending_wedding_2, :class => "form_field")
+        = check_box_tag(:attending_wedding_2, value=true, checked=@attending_wedding_2)
       %div
         = label_tag(:attending_bbq_2, 'Will you be able to attend the Sunday BBQ?', :class => "form_label")
-        = check_box_tag(:attending_bbq_2, value=true, checked=@attending_bbq_2, :class => "form_field")
+        = check_box_tag(:attending_bbq_2, value=true, checked=@attending_bbq_2)
 
 
       %div
