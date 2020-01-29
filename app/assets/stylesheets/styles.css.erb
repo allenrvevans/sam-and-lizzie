@@ -64,11 +64,7 @@ h4{
 }
 @media only screen and (max-width: 30rem) {
   .img_container {
-    background-image: url(<%= asset_path 'flowers2.png' %>);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center 7.5rem;
+    background-image: none
   }
 }
  .header {
@@ -103,18 +99,16 @@ h4{
    border: 0.1rem solid #dfedd8;
    margin: 0.25rem;
    background-color: white;
+   color: #41433F;
+   font-size: 1rem;
+   font-family: Montserrat;
+   cursor: pointer;
  }
  .nav-elements:hover {
    background-color:  #dfedd8;
+    font-weight: 500;
  }
 
- .nav-elements > a {
-  text-decoration: none;
-  color: #41433F;
- }
- .nav-elements > a:hover {
-  font-weight: 500;
- }
  .copy_container {
   display: flex;
   justify-content: center;
@@ -172,21 +166,21 @@ h4{
 .form_label {
   line-height:2.25;
   padding-right: 0.5rem;
-}
-.w-100 {
   width: 100%;
   display: block;
 }
-.w-60 {
-  width: 60%;
-}
+
 .form_field {
-  padding: 0.3rem;
+  padding: 0.7rem;
   margin-bottom: 0.5rem;
-  border: 0.02rem solid lightgray;
+  border: solid 0.05rem lightgray;
+  width: 80%;
+  display: block;
 }
-.form_section_heading {
-  margin: 0.5rem 0;
+@media only screen and (max-width: 45rem) {
+  .form_field {
+  width: 90%;
+  }
 }
 .submit_button {
   padding: .6rem 1rem;
