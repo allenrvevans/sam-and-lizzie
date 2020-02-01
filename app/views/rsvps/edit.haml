@@ -27,7 +27,7 @@
       = check_box_tag(:attending_bbq_1, value=true, checked=@attending_bbq_1)
 
     - if @guests > 1
-      %h3
+      %h3.second_guest
         Second Guest
       %div
         = label_tag(:first_name_2, 'First Name', :class => "form_label")
