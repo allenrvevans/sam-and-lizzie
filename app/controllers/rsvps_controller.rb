@@ -60,6 +60,8 @@ class RsvpsController < ApplicationController
 
       record["Music Suggestions"] = params[:music_suggestions]
 
+      record["RSVP recieved"] = true
+
       @table.update(record)
 
       redirect_to(action: 'thanks')
