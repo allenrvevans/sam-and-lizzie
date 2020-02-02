@@ -46,8 +46,8 @@
         = check_box_tag(:attending_bbq_2, value=true, checked=@attending_bbq_2)
 
 
-      %div
-        = label_tag(:music_suggestions, 'Any song requests to get you on the dancefloor?', :class => "form_label w-100")
-        = text_field_tag(:music_suggestions, value=@music_suggestions, :class => "form_field w-60")
+    %div
+      = label_tag(:music_suggestions, 'Any song requests to get you on the dancefloor?', :class => "form_label w-100")
+      = text_field_tag(:music_suggestions, value=@music_suggestions, :class => "form_field w-60")
     
     = submit_tag('Send your RSVP', :class => 'submit_button')
