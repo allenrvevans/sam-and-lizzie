@@ -1,6 +1,11 @@
 -# TO DO: create a page for cant find code
 
 = render("shared/content_card") do
+
+  :javascript
+    document.cookie = "rsvp=#{@code}"
+
+
   %h2.copy_heading
     Rsvp
   %p Please RSVP at your earliest convenience using the form below. If you can make it, we look forward to seeing you there!

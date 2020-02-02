@@ -14,6 +14,8 @@ class RsvpsController < ApplicationController
     if ! recordsWithCode.records.empty?
       record = recordsWithCode.records[0]
 
+      @code = params[:code]
+
       @guests = record[:guests].blank? ? 0 : record[:guests]
 
       @first_name_1 = record[:first_name_1]
