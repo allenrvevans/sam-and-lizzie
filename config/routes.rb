@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 
   get '/details', to: 'pages#details'
   get '/sunday', to: 'pages#sunday'
-  get '/accomodation', to: 'pages#accomodation'
+  get '/accommodation', to: 'pages#accommodation'
   get '/transport', to: 'pages#transport'
   get '/gifts', to: 'pages#gifts'
   get '/rsvp', to: 'pages#rsvp'
